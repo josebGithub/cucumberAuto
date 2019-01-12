@@ -1,4 +1,6 @@
 package com.basic.FirstFeatureFile;
+import javax.print.DocFlavor.URL;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,7 @@ public class MyFirstStepDef {
 			System.setProperty("webdriver.chrome.driver","/Users/josephinebut/Library/Preferences/PyCharmEdu2018.2/scratches/chromedriver");
 	        driver = new ChromeDriver();
 	        driver.get("http://katalon-demo-cura.herokuapp.com/profile.php#login");
+	        System.out.println("To open URL...");
 		}
 		
 		@When("^User enters the username$")
